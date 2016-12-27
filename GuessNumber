@@ -1,0 +1,26 @@
+d = 0   #decrease_counter
+i = 0   #increase_counter
+
+guess = rand(1..100)
+
+print "Guess the number: "
+input = gets.chomp.to_i
+
+while input > guess
+  print "Wrong! Decrease the number: "
+  input = gets.chomp.to_i
+  d = d + 1
+    if input == guess
+  puts "Well done. Guess was #{guess}"
+end
+
+while input < guess
+print "Incorrect! Increase the number: "
+input = gets.chomp.to_i
+i = i + 1
+  if input == guess
+puts "Good job. Guess was #{guess}"
+end
+
+t = d + i   #turn_counter
+puts "Succeded #{t} turn"
