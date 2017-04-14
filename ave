@@ -1,0 +1,21 @@
+maxlength = reand(1..10)
+aray = []
+
+while array.length < maxlength
+array << rand(1..10)
+end
+
+i = 0
+sum = 0
+
+puts "Before process = #{array}"
+
+while i < array.length
+sum = sum + array[i]
+ave = sum / array.length
+i = i + 1
+end
+
+array.delete_if { |array| array < ave }
+puts "ave = #{ave}"
+puts "After process = #{array}"
