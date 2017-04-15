@@ -1,0 +1,25 @@
+print "Enter a number: "
+number=gets.chom.to_i
+
+def rev(a)
+a=a.to_s
+a=a.reverse.to_i
+end
+
+def revsum(b)
+b=b.to_s
+b=b.reverse.to_i
+end
+
+i=0
+while i<10
+sum = number + rev(number)
+number = sum
+  if sum == revsum(sum)
+    puts sum
+    break
+  else
+    puts sum
+    i=i+1
+  end
+end
