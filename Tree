@@ -1,0 +1,17 @@
+#irb
+
+myTree=['a',['b',['d',[],[]],['e',[],[]]],['c',['f',[],[]],[]]]
+root=myTree[0] 
+subLeftTree=myTree[1]
+subRightTree=myTree[2]
+subLeftTree[1]    # => "['d',[],[]]"
+subLeftTree[2]    # => "['e',[],[]]"
+subRightTree[1]   # => "['f',[],[]]"
+
+root # => "a"
+
+subLeftTree[0]     # => "b"
+subleftTree[1][0]  # => "d"
+subleftTree[2][0]  # => "e"
+subRightTree[0]    # => "c"
+subRightTree[1][0] # => "f"
