@@ -1,0 +1,16 @@
+print "Enter a plate: "
+
+plate = gets.chomp.to_i
+
+contents = File.open("file.txt")
+contents.each.do |line|
+
+temp = []
+temp = (k,v = line.chomp.split)
+
+h=Hash[*temp]
+hash = h.merge(h) { |k,v| v.to_i }
+hash.select! { |k,v| v == plate }
+
+puts hash.keys
+end
